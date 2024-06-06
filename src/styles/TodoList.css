@@ -1,0 +1,55 @@
+/* General Container Styles */
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px; /* Adjust width as needed */
+    margin: 0 auto;  /* Center the container */
+    background-color: plum;
+    padding: 30px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  /* Heading Styles */
+  .todo-app h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better contrast */
+  }
+  
+  /* Todo List Styles */
+  .todo-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .todo-list li.complete {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .todo-list li .todo-text {
+    flex-grow: 1;
+  }
+  
+  .todo-list li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
